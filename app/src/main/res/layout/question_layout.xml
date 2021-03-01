@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textSize="22sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="5dp"
+        android:textSize="50sp"
+        android:id="@+id/questionNo"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        card_view:cardCornerRadius="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_margin="3dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:id="@+id/question"
+
+        />
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+
+
+            android:layout_marginTop="45dp"
+            android:layout_gravity="center"
+        android:layout_below="@+id/question"
+            android:id="@+id/image"
+            />
+    </android.support.v7.widget.CardView>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/answer"/>
+  <!--  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Share Your Result"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:layout_width="91dp"
+            android:layout_height="57dp"
+            android:background="@drawable/facebook"
+            android:id="@+id/imageButton" />
+
+        <ImageButton
+            android:layout_width="91dp"
+            android:layout_height="57dp"
+            android:background="@drawable/twitter"/>
+        <ImageButton
+            android:layout_width="91dp"
+            android:layout_height="57dp"
+            android:background="@drawable/whatsapp"/>
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="57dp"
+            android:background="@drawable/googleplus"/>
+    </LinearLayout>-->
+</LinearLayout>
+
+
+
+
+  <!--  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionNo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/question"/>
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer"/>
+
+-->
+
+
+
+
+
+

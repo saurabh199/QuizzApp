@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:drawable="@drawable/bookmark_hover" android:state_focused="false"/>
+    <item android:drawable="@drawable/bookma" android:state_focused="true"/>-->
+  <!--  <item android:drawable="@drawable/bookmark_hover" android:state_pressed="true" />
+    <item android:drawable="@drawable/bookma" android:state_selected="true" />
+    <item android:drawable="@drawable/bookma" />-->
+    <!--<item android:drawable="@drawable/bookma"/>-->
+
+    <item android:drawable="@drawable/book_1x"
+        android:state_pressed="true" />
+    <item android:drawable="@drawable/booked_1x"
+        android:state_focused="true" />
+    <item android:drawable="@drawable/booked_1x" />
+</selector>
+

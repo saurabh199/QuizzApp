@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ececec"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question "
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/question_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+<com.proprofs.proprofsquizzes.volley.CustomViewDisplay
+    android:id="@+id/customViewShow"
+    android:layout_width="fill_parent"
+    android:layout_height="20dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="9dp" />
+           <!-- <com.quiz.proprofs.quizmaker.volley.CustomViewDisplay
+                android:id="@+id/customViewShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="9dp"
+               />-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/percentage"
+                android:textSize="17sp"
+                />
+            <!--<ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/MyProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="23dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="10"
+                android:minHeight="30dp"
+                android:minWidth="150dp"
+               />-->
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:padding="17dp"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="#212121"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/question_image"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+
+                android:background="@mipmap/defaultimage"
+                android:contentDescription="@string/app_name" />
+
+            <!-- <ImageView
+                 android:layout_width="350dp"
+                 android:layout_height="200dp"
+                android:scaleType="center"
+                 android:layout_gravity="center"
+                 android:background="#000"
+                 android:layout_marginBottom="15dp"
+                 />-->
+            <RadioGroup
+                android:id="@+id/radioButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="60sp"
+                android:layout_weight="1"
+                android:clickable="false"
+                />
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/ans_image"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/radioButtons"
+                android:contentDescription="@string/app_name"  />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel"></ListView>
+        </LinearLayout>
+
+        <!--<RadioGroup
+            android:id="@+id/radioButtons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:textSize="28dp"
+            android:layout_alignParentStart="true
+            />-->
+        <!-- <RadioButton
+             android:text="RadioButton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/linearLayout"
+             android:layout_alignParentStart="true"
+
+             android:id="@+id/radioButton" />-->
+    </RelativeLayout>
+</ScrollView>
